@@ -401,10 +401,10 @@ SOFTWARE.
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+**Simran Koshta**
+- GitHub: https://github.com/SimranKoshta11
+- LinkedIn: https://www.linkedin.com/in/simran-koshta-40b3b2289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+- Email: simrankoshta20@gmail.com
 
 Built with ❤️ by a computer science student passionate about interview preparation and clean web design.
 
