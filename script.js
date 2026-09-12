@@ -405,7 +405,8 @@ function initMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
     
     if (mobileMenuBtn && navMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
             navMenu.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
         });
@@ -417,6 +418,22 @@ function initMobileMenu() {
                 navMenu.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
             });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
+        });
+
+        // Close menu when window resized to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
         });
     }
 }
